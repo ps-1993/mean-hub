@@ -1,0 +1,18 @@
+<h2 class="page-header">Login</h2>
+<form (ngSubmit)="onLogin(form)" #form="ngForm">
+  <div class="form-group">
+    <label>Username:</label>
+    <input type="text" name="username" class="form-control" ngModel required>
+  </div>
+  <div class="form-group">
+    <label>Password:</label>
+    <input type="password" name="password" class="form-control" ngModel required>
+  </div>
+  <input type="submit" value="Login" class="btn btn-primary" />
+  <a class="btn btn-social btn-facebook">
+      <span class="fa fa-facebook"></span> Sign in with Facebook
+  </a>
+  <a class="btn btn-social btn-google">
+      <span class="fa fa-google"></span> Sign in with Google
+  </a>
+</form>

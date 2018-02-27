@@ -1,0 +1,25 @@
+<nav class="navbar navbar-inverse fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="/home">MEAN Auth App</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li routerLinkActive><a routerLink='/home'>Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li *ngIf="isLoggedIn()" routerLinkActive><a routerLink='/profile'>Profile</a></li>
+        <li *ngIf="isLoggedIn()" routerLinkActive><a routerLink='/dashboard'>Dashboard</a></li>
+        <li *ngIf="!isLoggedIn()" routerLinkActive><a routerLink='/login'>Login</a></li>
+        <li *ngIf="isLoggedIn()" routerLinkActive><a href="#" (click)="onLogoutClicked()">Logout</a></li>
+        <li *ngIf="!isLoggedIn()" routerLinkActive><a routerLink='/register'>Register</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
