@@ -341,7 +341,7 @@ module.exports = ""
 /***/ "./src/app/login/login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Login</h2>\n<form (ngSubmit)=\"onLogin(form)\" #form=\"ngForm\">\n  <div class=\"form-group\">\n    <label>Username:</label>\n    <input type=\"text\" name=\"username\" class=\"form-control\" ngModel required>\n  </div>\n  <div class=\"form-group\">\n    <label>Password:</label>\n    <input type=\"password\" name=\"password\" class=\"form-control\" ngModel required>\n  </div>\n  <input type=\"submit\" value=\"Login\" class=\"btn btn-primary\" />\n</form>"
+module.exports = "<h2 class=\"page-header\">Login</h2>\n<form (ngSubmit)=\"onLogin(form)\" #form=\"ngForm\">\n  <div class=\"form-group\">\n    <label>Username:</label>\n    <input type=\"text\" name=\"username\" class=\"form-control\" ngModel required>\n  </div>\n  <div class=\"form-group\">\n    <label>Password:</label>\n    <input type=\"password\" name=\"password\" class=\"form-control\" ngModel required>\n  </div>\n  <input type=\"submit\" value=\"Login\" class=\"btn btn-primary\" />\n  <a class=\"btn btn-social btn-facebook\">\n      <span class=\"fa fa-facebook\"></span> Sign in with Facebook\n  </a>\n  <a class=\"btn btn-social btn-google\">\n      <span class=\"fa fa-google\"></span> Sign in with Google\n  </a>\n</form>"
 
 /***/ }),
 
