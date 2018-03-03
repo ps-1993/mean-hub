@@ -68,7 +68,6 @@ export class AuthService {
   loggedIn()
   {
     let isExpired =tokenNotExpired('id_token');
-    console.log("in auth service"+isExpired);
     return isExpired;
   }
 }

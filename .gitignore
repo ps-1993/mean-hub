@@ -1,2 +1,5 @@
 node_modules/*
 angular-src/node_modules/*
+angular-src/e2e/*
+config/oauth.js
+config/dbconfig.js
